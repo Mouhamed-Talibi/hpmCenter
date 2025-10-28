@@ -25,6 +25,7 @@
     --color-neutral: #F1FAEE;   /* Snow White – Text Background Contrast */
     --text-main: #1E1E1E;        /* Main body text – high contrast for readability */
     --text-secondary: #4A4A4A;   /* Secondary text – descriptions, muted details */
+    --dark-bg: #1A1A1A;
 }
 
 /* Body */
@@ -592,7 +593,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFB3B3;
+    background-color: var(--color-light);
     border-radius: 10px;
     height: 60px;
     width: 60px;
@@ -621,4 +622,44 @@ body {
 
 .feature p {
     opacity: .7;
+}
+
+/* =============================================================== Call Us ========================================================*/
+.call-us {
+    padding: 30px 0;
+    background-color: var(--dark-bg);
+    color: var(--color-neutral);
+}
+
+.call-us .text h3 {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.call-us .text p {
+    margin-top: 10px;
+    opacity: .7;
+    font-family: var(--font-montserrat);
+}
+
+.call-us-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.call-us-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(100, 165, 209, 0.3);
+}
+
+.call-us-link i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
 }
