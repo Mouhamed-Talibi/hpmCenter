@@ -1831,3 +1831,132 @@ body {
         font-size: 1.2rem;
     }
 }
+
+/* ================================================================ Values & missions ============================================ */
+.values-section {
+    padding: 40px 0;
+}
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.value-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 127, 80, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    background: var(--color-primary);
+    transform: scale(1.1);
+}
+
+.value-icon i {
+    font-size: 2rem;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon i {
+    color: white;
+}
+
+.value-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+
+.value-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .values-container {
+        gap: 20px;
+    }
+    
+    .value-card {
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .values-section {
+        padding: 60px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .mission-card {
+        padding: 25px;
+    }
+    
+    .mission-text {
+        font-size: 1.1rem;
+    }
+    
+    .value-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .mission-icon {
+        font-size: 2rem;
+    }
+    
+    .value-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .value-icon i {
+        font-size: 1.7rem;
+    }
+}
