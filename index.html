@@ -318,18 +318,122 @@
         <!-- /end Testimonials -->
 
         <!-- Faqs -->
-        <div class="faqs" id="faqs">
-            <div class="main-title">
-                <div class="main-title text-center">
-                    <span>
-                        <i class="fa-solid fa-medal me-1"></i>
-                        Centre HPM
-                    </span>
-                    <h2>Questions fréquentes</h2>
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="main-title">
+                    <div class="main-title text-center">
+                        <span>
+                            <i class="fa-solid fa-medal me-1"></i>
+                            Centre HPM
+                        </span>
+                        <h2>Questions fréquentes</h2>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item" data-category="general">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                            <h3>Quels documents sont nécessaires pour s'inscrire et garantir de l'inscription</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer" id="faq1">
+                            <p>Naturellement, nous avons besoin de documents pour l'inscription qui sont les suivants :</p>
+                            <ul>
+                                <li>4 copies certifiées conformes de la carte d'identité nationale ou du contrat de mariage en cas d'absence de carte d'identité</li>
+                                <li>4 photos d'identité récentes</li>
+                                <li>2 enveloppes timbrées</li>
+                                <li>2 timbres fiscaux de 10 DH (emplacement du nom et du prénom)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item" data-category="courses">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                            <h3>Quels types de cours propose le Centre HPM ?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer" id="faq2">
+                            <p>Le Centre HPM offre une variété de cours adaptés à vos besoins :</p>
+                            <ul>
+                                <li>Langues : Anglais et Français</li>
+                                <li>Informatique et bureautique</li>
+                                <li>Formation professionnelle spécialisée</li>
+                                <li>Ateliers pratiques et stages pour l’insertion professionnelle</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item" data-category="payment">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                            <h3>Quels modes de paiement sont acceptés pour les cours ?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer" id="faq3">
+                            <p>Pour faciliter votre inscription, nous acceptons plusieurs modes de paiement :</p>
+                            <ul>
+                                <li>Espèces directement au centre</li>
+                                <li>Virement bancaire</li>
+                                <li>Chèques certifiés</li>
+                                <li>Paiement en ligne via carte bancaire sécurisée</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item" data-category="support">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                            <h3>Le centre propose-t-il un accompagnement après les cours ?</h3>
+                            <div class="faq-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="faq-answer" id="faq4">
+                            <p>Oui, le Centre HPM accompagne ses étudiants même après la fin des cours :</p>
+                            <ul>
+                                <li>Suivi personnalisé des compétences acquises</li>
+                                <li>Conseils pour l’insertion professionnelle</li>
+                                <li>Accès aux ateliers et événements du centre</li>
+                                <li>Assistance pour la recherche de stages et d’emploi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /end Faqs -->
+
+        <!-- Contact Support -->
+        <div class="call-us">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center text-center text-lg-start">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="text">
+                            <h3>Vous avez encore des questions ?</h3>
+                            <p>
+                                Vous ne trouvez pas la réponse que vous cherchez ? N'hésitez pas à contacter notre 
+                                équipe sympathique.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="link">
+                            <a href="#" class="call-us-link">
+                                Contacter le support
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- /end Faqs -->
+        <!-- /end Contact Support -->
     </div>
 
     <!-- Bootstrap js -->
@@ -350,5 +454,7 @@
     <script src="js/alterText.js"></script>
     <!-- Testimonials -->
     <script src="js/testimonials.js"></script>
+    <!-- Faqs -->
+    <script src="js/faqs.js"></script>
 </body>
 </html>
